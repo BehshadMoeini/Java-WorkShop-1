@@ -30,7 +30,33 @@ public class Rules {
     
         
     public void lending_book(){
+        for(int i=0,j=1; i<10; i++,j++){
+            System.out.print("\n"+j+") "+book[0][i]);
+        }
         
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("\n\nEnter your name : ");
+        String name = input.nextLine();
+        System.out.print("Enter your national code : ");
+        String national_code = input.nextLine();
+        System.out.print("Enter your father name : ");
+        String father_name = input.nextLine();
+        System.out.print("Enter your book code : ");
+        int book_code = input.nextInt();
+        
+        int temp = 0;
+        for(int i=0; i<10; i++){
+            if(this.book_code[0][i] == book_code){
+                System.out.println("\n**Your operation was successful**");
+                temp = 1;
+                break;
+            }
+        }
+        
+        if(temp == 0){
+            System.out.println("\nThe code you entered is incorrect");
+        }
     }
     
     
@@ -51,6 +77,15 @@ public class Rules {
         final String numbers_of_chairs = "50";
         final String numbers_of_employees = "5";
         
+        System.out.println("\n\t**Library information**\n");
+        System.out.println("file number          = "+file_number);
+        System.out.println("city                 = "+city);
+        System.out.println("phone number         = "+phone_number);
+        System.out.println("zip code             = "+zip_code);
+        System.out.println("library area         = "+library_area);
+        System.out.println("numbers of books     = "+numbers_of_books);
+        System.out.println("numbers of chairs    = "+numbers_of_chairs);
+        System.out.println("numbers of employees = "+numbers_of_employees);
     }
     
  

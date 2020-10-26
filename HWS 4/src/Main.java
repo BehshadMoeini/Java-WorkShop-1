@@ -11,7 +11,26 @@ public class Main {
         System.out.print("\nEnter your select : ");
         int a = input.nextInt();
         
-        
+        switch(a){
+            case 1:
+                Rules information = new Rules();
+                information.inscribe_information();
+                break;
+            
+            case 2:
+                Rules national_card = new Rules();
+                national_card.receive_card();
+                break;
+                
+            case 3:
+                Rules lending = new Rules();
+                lending.lending_book();
+                break;
+                
+            default :
+                System.out.println("The number entered is incorrect");
+               
+        }
         
         
     }
