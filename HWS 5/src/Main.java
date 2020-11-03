@@ -33,7 +33,9 @@ public class Main {
         
         System.out.println("\n-------------------------------------------------");
         
-        
+        Services ser = new Services();
+        ser.first_service(firstNameList,lastNameList,nationalNumberList,levelList);
+        ser.second_service(levelList,firstNameList,lastNameList);
     }
     
 }
