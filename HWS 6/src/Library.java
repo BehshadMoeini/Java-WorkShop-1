@@ -136,7 +136,75 @@ public class Library {
             }
         });
         
+        mi3.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                
+                rb1.setText(bookName_list.get(0));
+                rb1.setBounds(150,40,200,20);
+                rb2.setText(bookName_list.get(1));
+                rb2.setBounds(150,60,200,20);
+                rb3.setText(bookName_list.get(2));
+                rb3.setBounds(150,80,200,20);
+                rb4.setText(bookName_list.get(3));
+                rb4.setBounds(150,100,200,20);
+                rb5.setText(bookName_list.get(4));
+                rb5.setBounds(150,120,200,20);
+                rb6.setText(bookName_list.get(5));
+                rb6.setBounds(150,140,200,20);
+                rb7.setText(bookName_list.get(6));
+                rb7.setBounds(150,160,200,20);
+                rb8.setText(bookName_list.get(7));
+                rb8.setBounds(150,180,200,20);
+                rb9.setText(bookName_list.get(8));
+                rb9.setBounds(150,200,200,20);
+                rb10.setText(bookName_list.get(9));
+                rb10.setBounds(150,220,200,20);
+                b.setText("Buy");
+                b.setBounds(165,250,100,30);
+                b.addActionListener(new ActionListener(){
+                    public void actionPerformed(ActionEvent e){
+                        l.setText("** your Buy is Seccessfull **");
+                        l.setBounds(150,300,200,30);
+                    }
+                });
+                rb1.setVisible(true);
+                rb2.setVisible(true);
+                rb3.setVisible(true);
+                rb4.setVisible(true);
+                rb5.setVisible(true);
+                rb6.setVisible(true);
+                rb7.setVisible(true);
+                rb8.setVisible(true);
+                rb9.setVisible(true);
+                rb10.setVisible(true);
+                text.setVisible(false);
+                text2.setVisible(false);
+                b.setVisible(true);
+                l.setVisible(true);
+            }
+        });
+
         
+        f.add(text);
+        f.add(text2);
+        f.add(rb1);
+        f.add(rb2);
+        f.add(rb3);
+        f.add(rb4);
+        f.add(rb5);
+        f.add(rb6);
+        f.add(rb7);
+        f.add(rb8);
+        f.add(rb9);
+        f.add(rb10);
+        f.add(b);
+        f.add(l);
+        f.setJMenuBar(mb);
+        f.setSize(500,500);
+        f.setLayout(null);
+        f.setVisible(true);
+        f.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
     
 
 }
